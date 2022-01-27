@@ -3,13 +3,17 @@
 #include <math.h>
 
 int main()
-{
-    float x;
-    float y;
-    printf("unesi temperaturu ujutro\n");
-    scanf("%f",&x);
-    printf("unesi temperaturu popodne\n");
-    scanf("%f",&y);
-    float rt=abs(x-y);
-    printf(" razlika temperature je %.2f\n ",rt);
+{ float a;
+  float b;
+  float c;
+  printf("unesi broj stupova\n");
+  scanf("%f",&a);
+  printf("unesi udaljenost izmedu stupova\n");
+  scanf("%f",&b);
+  printf("unesi sirinu stupa\n");
+  scanf("%f",&c);
+  float e=(b*100)*(a-1)+c*(a-2);
+  printf("udaljenost izmedu prvog izadnjeg stupa je\n%2.f",e);
+
+    return 0;
 }
