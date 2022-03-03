@@ -1,26 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int main()
 {
+    printf(" _______________________________________\n");
+    printf("|\t\t\t\t\t|\n");
+    printf("|\t 1. kvadrat\t\t\t|\n");
+    printf("|\t\t\t\t\t|\n");
+    printf("|\t 2. pravokutnik\t\t\t|\n");
+    printf("|\t\t\t\t\t|\n");
+    printf("|\t 3. krug\t\t\t|\n");
+    printf("|\t\t\t\t\t|\n");
+    printf(" _______________________________________\n");
 
+
+    int x;
     int a;
     int b;
     int c;
-    printf("unesi neki broj\n");
-    scanf("%d",&a);
-    printf("unesi neki broj\n");
-    scanf("%d",&b);
-    printf("unesi neki broj\n");
-    scanf("%d",&c);
-    if (a+b==c){
-        printf("%d + %d = %d",a,b,a+b);
-        }else if (a+c==b){
-        printf("%d+ %d= %d",a,c,b);
-        }else if (c+b==a){
-        printf("%d+ %d= %d",c,b,a);
-        }else{
-            printf("niti jedan od ucitanih brojeva nije moguce prikazati kao zbroj");
-        }
+    int d;
 
+    printf("unesi odabranu opciju\n");
+    scanf("%d",&x);
+
+
+
+    switch(x){
+    case 1:
+    printf("unesi stranicu kvadrata\n");
+    scanf("%d",&a);
+    int pk=a*a;
+    printf("povrsina kvadrata je %d",pk);
+    break;
+    case 2:
+    printf("unesi stranicu pravokutnika \n");
+    scanf("%d",&b);
+    printf("unesi stranicu pravokutnika\n");
+    scanf("%d",&c);
+    int pp=b*c;
+    printf("povrsina pravokutnika je %d",pp);
+    break;
+    case 3:
+      printf("unesi polumjer kruga\n");
+    scanf("%d",&d);
+    float p=(float)(d*d)*3.14;
+    printf("povrsina kruga je %.2f",p);
+    break;
+
+    default:
+        printf("nije dobar broj");
+        break;
+    }
 }
