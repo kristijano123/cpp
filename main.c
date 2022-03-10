@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int main()
 {
-    int x;
-    int y;
-    printf("unesi neki broj\n");
-    scanf("%d",&x);
-     printf("unesi neki broj\n");
-    scanf("%d",&y);
-    if (x<y)
-        printf("broj %d je veci od %d",y,x);
-    else if (x>y)
-        printf("broj %d je veci od %d",x,y);
+     int x;
+     printf("unesi neki troznamenkasti broj\n");
+     scanf ("%d",&x);
+     int y=x/100;
+     int a=x/10-y*10;
+     int b=x%10;
+     if(y*y*y+a*a*a+b*b*b==x)
+        printf("to je armstrongov broj");
+     else
+        printf("to nije armstrongov broj");
+
 }
