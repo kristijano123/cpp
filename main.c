@@ -4,18 +4,22 @@
 int main()
 {
     int x;
-    printf("unesi neki kvadrant1\n");
+    printf(" unesi neki broj kvadanta\n");
     scanf("%d",&x);
-    if (x==1)
+    switch(x){
+case 1:
     printf("++");
-    else if(x==2)
-        printf("-+");
-    else if (x==3)
+    break;
+case 2:
+    printf("-+");
+    break;
+case 3:
     printf("--");
-    else if (x==4)
-        printf("+-");
-    else
-        printf("to nije kvadrant");
-
-
+    break;
+case 4:
+    printf("+-");
+    break;
+default:
+    printf ("to nije kvadrant");
+    }
 }
