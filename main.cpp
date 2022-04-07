@@ -3,22 +3,18 @@
 
 int main()
 {
-    int m, suma=0;
-   int n,brSanduka=1;
- printf("unesi broj jabuka \n");
- scanf("%d",&n);
- while(n){
-
-  printf("unesi masu jabuke\n");
- scanf("%d",&m);
- n--;
-
- if(suma+m>1000){
-        suma=m;
-        brSanduka++;
-
-
- }else suma+=m;
- } printf("treba %d sanduka",brSanduka);
+  int n,m,s=0;
+  printf ("unesi neki broj\n");
+  scanf("%d",&n);
+  while (n){
+    m=m*10+n%10;
+    n/=10;
+    }
+    while (m){
+    scanf("%d",&n);
+    s+=n*(m%10);
+    m/=10;
+    }
+    printf("%d",s);
 
 }
