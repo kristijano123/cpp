@@ -1,20 +1,14 @@
-#include <stdio.h>
+#include <iostream>
 
+using namespace std;
 
 int main()
 {
-  int n,m,s=0;
-  printf ("unesi neki broj\n");
-  scanf("%d",&n);
-  while (n){
-    m=m*10+n%10;
-    n/=10;
-    }
-    while (m){
-    scanf("%d",&n);
-    s+=n*(m%10);
-    m/=10;
-    }
-    printf("%d",s);
+   int a[5]={16,-3,4,2,10};
+   int i;
+  for(i=5;i>=0;i--){
+        printf("%d\n",a[i]);
+}
+
 
 }
